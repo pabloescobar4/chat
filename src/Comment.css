@@ -1,0 +1,33 @@
+.flex{
+	display: flex;
+
+}
+.gap{
+	margin-left:5px;
+}
+.bgclr{
+	background-color:beige;
+	padding:2%;
+	border-radius:0;
+	width:50%
+}
+
+.bgclr1{
+	background-color:beige;
+	padding:2%;
+	border-radius:0;
+	margin-left: 100px;
+	width:41.4%
+}
+
+.bgclr2{
+	background-color:beige;
+	padding:2%;
+	border-radius:0;
+	margin-left: 200px;
+	width:32.7%
+}
+.plus{
+	margin-left: 1px;;
+}
+
