@@ -28,7 +28,9 @@ margin-top: 2%;
 .App-link {
   color: #61dafb;
 }
-
+.flex{
+ margin-left:10px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,3 +39,5 @@ margin-top: 2%;
     transform: rotate(360deg);
   }
 }
+
+

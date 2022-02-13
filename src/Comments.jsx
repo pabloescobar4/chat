@@ -42,7 +42,13 @@ function Components(){
 
 	console.log(data)
 
-	// const [date,setDate] =  useState(data[0].timestamp)
+	const [date,setDate] =  useState(data[0].timestamp)
+const new2 =  (moment(new Date(date)).format('DD-MMM-YYYY'));
+// console.log(new2.fromNow())
+
+var utcTime = new Date(date);
+var timeAgo = moment(utcTime).fromNow();    
+console.log(timeAgo)
 	const [plus,setPlus] = useState("+")
 	function newOne(){
 		let val =plus;
@@ -56,11 +62,11 @@ function Components(){
 	
 	  
 
-// const datefromnow = (moment(date).fromNow(),"a")
+const datefromnow = (moment(date).fromNow(),"a")
 
-// 	function dateSet(){
-// 		setDate()
-// 	}
+	function dateSet(){
+		setDate()
+	}
 
 	const [Ab,setAb] = useState(data)
 // 	console.log(Ab)
@@ -86,7 +92,8 @@ function Components(){
 						{element.points} points
 						</div>
 						<div className ="gap">
-						{element.timestamp}
+						
+						{timeAgo}
 						</div>
 						{/* {setDate} */}
 						</div>
@@ -141,7 +148,7 @@ function Components(){
 						{element.replies[0].points} points
 						</div>
 						<div className ="gap">
-						{element.replies[0].timestamp}
+						{timeAgo}
 						</div>
 						{/* {setDate} */}
 						</div>
@@ -189,7 +196,7 @@ function Components(){
 						{element.replies[0].replies[0].points} points
 						</div>
 						<div className ="gap">
-						{element.replies[0].replies[0].timestamp}
+						{timeAgo}
 						</div>
 						{/* {setDate} */}
 						</div>
@@ -237,7 +244,7 @@ function Components(){
 						{element.replies[1].points} points
 						</div>
 						<div className ="gap">
-						{element.replies[1].timestamp}
+						{timeAgo}
 						</div>
 						{/* {setDate} */}
 						</div>
